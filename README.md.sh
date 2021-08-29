@@ -2,18 +2,8 @@
 
 ###
 
-cmd_loop() {
-	
-	seq $1 | xargs -I --$2
-	
-}
-
-
-
-rm -rf ./README.md ; \
-#cmd_loop 3 echo && \
+rm -rf ./README.md && \
 echo 'ls -a' | bash && \
-#cmd_loop 3 echo && \
 echo '\
 \
 rclone \
